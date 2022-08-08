@@ -7,6 +7,9 @@ const { Option } = Select
 
 function App() {
 	const [data, setData] = useState('')
+
+	const [isLoading, setIsLoading] = useState(false)
+
 	const onFinish = async (values) => {
 		try {
 			const response = await QRCode.toDataURL(values.text, {
