@@ -16,7 +16,7 @@ function App() {
 			setData(response)
 		} catch (err) {
 			alert(err)
-			console.error(err)
+			console.error('error', { error })
 		}
 	}
 
