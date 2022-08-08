@@ -1,7 +1,7 @@
 import React from 'react'
 
 function Authen() {
-	return <div>Authen</div>
+	return <h4>Authen</h4>
 }
 
 export default Authen
