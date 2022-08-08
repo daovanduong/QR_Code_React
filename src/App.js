@@ -9,6 +9,7 @@ function App() {
 	const [data, setData] = useState('')
 
 	const [isLoading, setIsLoading] = useState(false)
+	const [isLoading2, setIsLoading2] = useState(false)
 
 	const onFinish = async (values) => {
 		try {
