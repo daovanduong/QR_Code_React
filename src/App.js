@@ -20,6 +20,7 @@ function App() {
 		} catch (err) {
 			alert(err)
 			console.error('error', { error })
+			console.error('error', { error })
 		}
 	}
 
