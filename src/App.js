@@ -7,6 +7,9 @@ const { Option } = Select
 
 function App() {
 	const [data, setData] = useState('')
+
+	const [isLoading, setIsLoading] = useState(false)
+
 	const onFinish = async (values) => {
 		try {
 			const response = await QRCode.toDataURL(values.text, {
@@ -16,7 +19,7 @@ function App() {
 			setData(response)
 		} catch (err) {
 			alert(err)
-			console.error(err)
+			console.error('error', { error })
 		}
 	}
 
